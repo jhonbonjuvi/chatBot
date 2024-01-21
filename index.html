@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%;
+            padding: 10px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: rgb(44, 47, 59);
+            background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
+            background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+        }
+        
+        .myHead {
+            text-align: center;
+            color: white;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 35%;
+            background-color: white;
+            border-radius: 20px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        #chatContainer {
+            max-height: 300px;
+            height: 250px;
+            overflow-y: auto;
+            border: 1px solid #c5c4c4;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        .endTitle {
+            text-align: center;
+            margin: 30px;
+            color: bisque;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .media {
+            padding: 20px;
+        }
+
+        #textbox {
+            border-radius: 5px;
+        }
+
+        /* Style for sent messages */
+        .sent-message {
+            background-color: #007bff;
+            color: #fff;
+        }
+        @media(max-width: 576px){
+           .container{
+            max-width: 100%;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="myHead">
+        <h1>ChatBot Expert System</h1>
+    </div>
+    <div class="container">
+        <div class="media">
+            <img src="unnamed.png" class="rounded-circle float-left img-thumbnail" width="75px" alt="...">
+            <div class="media-body">
+                <h5 style="margin: 10px">Dr. Jay R. Msu</h5>
+                <span style="margin-left: 10px; color: rgb(32, 199, 32)">Online</span>
+            </div>
+        </div>
+
+        <!-- Messages container -->
+        <div id="chatContainer" class="border overflow-auto">
+            <!-- Add messages dynamically here -->
+        </div>
+
+        <div class="input-group mt-3">
+            <input id="textbox" type="text" class="form-control" />
+            <div class="input-group-append">
+                <button id="sendBtn" type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+    <div class="endTitle">
+        <p>Developed by John Bon Juvi Jumarito</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
